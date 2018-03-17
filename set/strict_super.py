@@ -1,0 +1,5 @@
+A = set(input().split())
+n=int(input())
+B = set(input().split())
+C = set(input().split())
+print('True' if A.issuperset(B) and A.issuperset(C) else 'False')
