@@ -5,13 +5,6 @@ class Difference:
     def computeDifference(self):
         self.maximumDifference = abs(max(self.__elements)-min(self.__elements))
 
-
-
-
-
-
-# End of Difference class
-
 _ = input()
 a = [int(e) for e in input().split(' ')]
 
