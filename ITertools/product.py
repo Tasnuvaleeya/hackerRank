@@ -1,4 +1,4 @@
-from itertools import product
+from ITertools import product
 a= map(int, input().split())
 b= map(int, input().split())
 

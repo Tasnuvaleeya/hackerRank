@@ -1,4 +1,6 @@
-n = input()
-marks =[[input(),float(input())] for _ in range(n)]
-for a,b in marks:
-    print(a,b)
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+
+print(name,score)

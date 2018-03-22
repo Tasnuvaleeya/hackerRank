@@ -6,7 +6,7 @@ class Book(object, metaclass=ABCMeta):
     @abstractmethod
     def display():
         pass
-
+#
 
 class MyBook(Book):
     def __init__(self, title, author, price):
