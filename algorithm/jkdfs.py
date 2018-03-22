@@ -1,10 +1,10 @@
-import numpy
+import numerical_p
 a= list(map(int, input().split()))
 b= list(map(int, input().split()))
 
-arr = numpy.array(a)
-arr2 = numpy.array(b)
-res = numpy.inner(arr,arr2)
-res2 = numpy.outer(arr,arr2)
+arr = numerical_p.array(a)
+arr2 = numerical_p.array(b)
+res = numerical_p.inner(arr, arr2)
+res2 = numerical_p.outer(arr, arr2)
 print(res)
 print(res2)
