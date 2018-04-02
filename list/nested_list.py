@@ -1,6 +1,6 @@
 if __name__ == '__main__':
-    for _ in range(int(input())):
-        name = input()
-        score = float(input())
+    marksheet = [[input(), float(input())] for _ in range(int(input()))]
+    scores = [s for s in marksheet]
 
-print(name,score)
+    print(scores)
+

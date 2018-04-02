@@ -1,16 +1,22 @@
-if __name__ == '__main__':
-   N = int(input())
 
-res = []
-for _ in range(N):
-    inp = input().split()
-    print(inp)
-    if inp[0] == 'print':
-        print(res)
-    else:
-        if len(inp) == 1:
-            eval("res.{}()".format(inp[0]))
-        elif len(inp) == 2:
-            eval("res.{}({})".format(inp[0], inp[1]))
+if __name__ == '__main__':
+
+    N = int(input())
+
+    res = []
+    for _ in range(N):
+        inp = input().split()
+        if inp[0] == 'append':
+            res.append(int(inp[1]))
+        elif inp[0] == 'insert':
+            res.insert(int(inp[1]), int(inp[2]))
+        elif inp[0] == 'remove':
+            res.remove(int(inp[1]))
+        elif inp[0] == 'sort':
+            res.sort()
+        elif inp[0] == 'pop':
+            res.pop()
+        elif inp[0] == 'reverse':
+            res.reverse()
         else:
-            eval("res.{}({},{})".format(inp[0], inp[1], inp[2]))
+            print(res)

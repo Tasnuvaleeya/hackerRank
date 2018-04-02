@@ -16,3 +16,5 @@ n = int(input().strip())
 a = list(map(int, input().strip().split(' ')))
 result = lonelyinteger(a)
 print(result)
+
+
